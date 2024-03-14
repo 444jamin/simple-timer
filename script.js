@@ -1,16 +1,7 @@
-var images = [
-    './pictures/got\ 4k\ 4.jpg',
-    './pictures/got\ 4k\ 2.jpg',
-    './pictures/got\ 4k\ 3.webp'
-];
-
-function changeBackground() {
-    var randomNumber = Math.floor(Math.random() * images.length);
-    var randomImage = images[randomNumber];
-    document.body.style.backgroundImage = 'url(' + randomImage + ')';
+function playSound() {
+    var sound = document.getElementById('sound');
+    sound.play();
 }
-
-
 
 function updateTimer() {
     var targetTime = new Date(); // Get current time
@@ -26,6 +17,7 @@ function updateTimer() {
         // Timer expired
         var timerDisplay = document.getElementById('timer');
         timerDisplay.textContent = 'Game of Thrones time!';
+        playSound(); // Play sound when timer expires
         return;
     }
 
@@ -42,13 +34,4 @@ setInterval(updateTimer, 1000);
 
 // Initial update
 updateTimer();
-
-// Change background every 10 minutes (600000 milliseconds)
-setInterval(changeBackground, 600000);
-
-// Initial change
-changeBackground();
-
-
-
 
