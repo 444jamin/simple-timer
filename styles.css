@@ -1,0 +1,30 @@
+body {
+    background-image: url('./pictures/got\ 4k\ 4.jpg');
+    background-size: cover;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#timer-container {
+    border: 2px solid #000000;
+    padding: 10px;
+    width: 400px; 
+    margin: 0 auto; 
+}
+
+#timer {
+    color: #000000;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+}

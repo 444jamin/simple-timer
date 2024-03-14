@@ -1,1 +1,1 @@
-# simple-timer
+simple game night timer
