@@ -5,7 +5,7 @@ function playSound() {
 
 function updateTimer() {
     var targetTime = new Date(); // Get current time
-    targetTime.setDate(targetTime.getDate() + 1); // Set target date to tomorrow
+    //targetTime.setDate(targetTime.getDate() + 1); // Set target date to tomorrow
     targetTime.setHours(18);     // Set desired hour
     targetTime.setMinutes(0);    // Set desired minute
     targetTime.setSeconds(0);    // Set desired seconds
